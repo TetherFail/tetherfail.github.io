@@ -1,0 +1,91 @@
+html, body {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: #000000;
+}
+
+.page {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+}
+
+h1 {
+  margin: 0 0 7vh;
+  font-weight: 400;
+  font-size: 7vw;
+}
+
+.simply-days-section {
+  display: none;
+}
+
+.countdown {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.simply-section {
+  margin: 0 20px;
+}
+
+.simply-amount {
+  display: block;
+  font-size: 14vw;
+  font-weight: 700;
+}
+
+.simply-word {
+  display: block;
+  margin-top: 2vh;
+  font-size: 3.5vw;
+}
+
+.tg {
+  margin-top: 7vh;
+  font-weight: 600;
+  font-size: 3vw;
+}
+
+.tg > a {
+  color: #26A17B;
+}
+
+
+@media (min-width: 1200px) {
+  h1 {
+    margin: 0 0 48px;
+    font-size: 32px;
+  }
+
+  .simply-section {
+    margin: 0 20px;
+  }
+
+  .simply-amount {
+    font-size: 60px;
+  }
+
+  .simply-word {
+    margin-top: 10px;
+    font-size: 16px;
+  }
+
+  .tg {
+    margin-top: 48px;
+    font-size: 14px;
+  }
+}

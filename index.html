@@ -1,0 +1,59 @@
+<!doctype html>
+<html>
+<head>
+  <title>Скам тезера</title>
+  <meta content="user-scalable=no, width=device-width, initial-scale=1, maximum-scale=1" name="viewport">
+  <meta property="og:site_name" content="Скам тезера">
+  <meta property="og:title" content="Скам тезера через 5 часов">
+  <meta property="og:image" content="https://tether.fail/favicon.png">
+  <meta name="description" content="Покайтесь. Ибо грядет.">
+  <link rel="stylesheet" href="main.css">
+  <link rel="icon" type="image/png" href="favicon.png">
+</head>
+<body>
+
+<div class="page">
+  <h1>Скам тезера через</h1>
+  <div class="countdown"></div>
+  <div class="tg">
+    <a href="https://t.me/confessiANAL">#покайтесь</a>
+  </div>
+</div>
+
+<script src="countdown.js"></script>
+<script>
+  Date.prototype.addHours= function(h) {
+    this.setHours(this.getHours() + h);
+    return this;
+  }
+
+  Date.prototype.addSeconds= function(s) {
+    this.setSeconds(this.getSeconds() + s);
+    return this;
+  }
+
+  var scamDate = new Date().addHours(5).addSeconds(3);
+
+  simplyCountdown('.countdown', {
+    year: scamDate.getFullYear(),
+    month: scamDate.getMonth() + 1,
+    day: scamDate.getDate(),
+    hours: scamDate.getHours(),
+    minutes: scamDate.getMinutes(),
+    seconds: scamDate.getSeconds(),
+    words: {
+      days: { singular: 'дней' },
+      hours: { singular: 'часов' },
+      minutes: { singular: 'минут' },
+      seconds: { singular: 'секунд' }
+    },
+    plural: false,
+    zeroPad: true,
+    onEnd: function () {
+      alert('Рект неизбежен. Покайтесь.');
+      return;
+    }
+  });
+</script>
+</body>
+</html>
