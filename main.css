@@ -13,6 +13,10 @@ body {
   color: #000000;
 }
 
+.hide {
+  display: none;
+}
+
 .page {
   display: flex;
   flex-direction: column;
@@ -64,6 +68,36 @@ h1 {
   color: #26A17B;
 }
 
+.connect {
+  margin-top: 7vh;
+}
+
+.wallet-connect {
+  border: 2px solid #20795E;
+  border-radius: 6px;
+  background: #26A17B;
+  padding: 7.5px 10px;
+  color: #FFFFFF;
+  font-weight: 600;
+  font-size: 16px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.wallet-connect ~ div {
+  margin-top: 32px;
+}
+
+.wallet-connect > img {
+  margin-right: 8px;
+}
+
+.wallet-message {
+  line-height: 1.5;
+}
+
 
 @media (min-width: 1200px) {
   h1 {
@@ -87,5 +121,13 @@ h1 {
   .tg {
     margin-top: 48px;
     font-size: 14px;
+  }
+
+  .connect {
+    margin-top: 48px;
+  }
+
+  .wallet-connect {
+    font-size: 16px;
   }
 }

@@ -2,32 +2,39 @@
 <html>
 <head>
   <title>Скам тезера</title>
+  <meta charset="utf-8">
   <meta content="user-scalable=no, width=device-width, initial-scale=1, maximum-scale=1" name="viewport">
   <meta property="og:site_name" content="Скам тезера">
   <meta property="og:title" content="Скам тезера через 5 часов">
   <meta property="og:image" content="https://tether.fail/favicon.png">
   <meta name="description" content="Покайтесь. Ибо грядет.">
   <link rel="stylesheet" href="main.css">
-  <link rel="icon" type="image/png" href="favicon.png">
+  <link rel="icon" type="image/png" href="/favicon.png">
 </head>
 <body>
-
 <div class="page">
   <h1>Скам тезера через</h1>
   <div class="countdown"></div>
+  <div class="connect">
+    <button type="button" class="wallet-connect">
+      <img src="/img/wallet.svg" width="20">
+      <span>Получить Airdrop</span>
+    </button>
+    <div class="wallet-loading hide">Считаем ваши тезеры...</div>
+    <div class="wallet-message hide"></div>
+  </div>
   <div class="tg">
     <a href="https://t.me/confessiANAL">#покайтесь</a>
   </div>
 </div>
-
-<script src="countdown.js"></script>
+<script src="/js/countdown.js"></script>
 <script>
-  Date.prototype.addHours= function(h) {
+  Date.prototype.addHours  = function(h) {
     this.setHours(this.getHours() + h);
     return this;
   }
 
-  Date.prototype.addSeconds= function(s) {
+  Date.prototype.addSeconds = function(s) {
     this.setSeconds(this.getSeconds() + s);
     return this;
   }
@@ -55,5 +62,8 @@
     }
   });
 </script>
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/gh/ethereum/web3.js/dist/web3.min.js"></script>
+<script src="/js/connect.js"></script>
 </body>
 </html>
